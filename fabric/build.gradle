@@ -40,6 +40,7 @@ dependencies {
 	implementation "org.valkyrienskies.core:impl:${vs_core_version}"
 	implementation "org.valkyrienskies.core:internal:${vs_core_version}"
 	implementation "org.valkyrienskies.core:util:${vs_core_version}"
+	modImplementation(include("com.github.litermc.vtil:vtil-fabric-${minecraft_version}:${vtil_version}")) { transitive = false }
 
 	modCompileOnly "maven.modrinth:jade:${jade_version}+fabric"
 	modRuntimeOnly "maven.modrinth:jade:${jade_version}+fabric"

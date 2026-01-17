@@ -14,13 +14,12 @@
  *  You should have received a copy of the GNU General Public License
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
  **/
-package com.github.litermc.vshield.config;
+package com.github.litermc.vshield.accessor;
 
-public final class Config {
-	// /**
-	//  * Force load all ships
-	//  */
-	// public static boolean forceLoadAllShips = false;
+import com.github.litermc.vshield.api.ShieldDamageType;
 
-	private Config() {}
+import it.unimi.dsi.fastutil.objects.Object2DoubleMap;
+
+public interface LevelChunkAccessor {
+	Object2DoubleMap<ShieldDamageType> vshield$getShieldMaxHealth();
 }
